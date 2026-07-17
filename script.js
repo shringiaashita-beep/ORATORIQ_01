@@ -37,6 +37,12 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
+// Also observe the ML badges section so staggered card animations trigger
+const mlBadgesSection = document.getElementById('ml-badges-section');
+if (mlBadgesSection) {
+  revealObserver.observe(mlBadgesSection);
+}
+
 /* Also observe about section to trigger skill bars */
 const aboutSection = document.getElementById('about');
 if (aboutSection) {
@@ -56,6 +62,7 @@ function animateSkillBars() {
 
 /* ---- Certificate Filter ---- */
 const filterBtns = document.querySelectorAll('.filter-btn');
+// Grab ALL cert-cards including the ml-badge-cards which also carry .cert-card
 const certCards = document.querySelectorAll('.cert-card');
 
 filterBtns.forEach(btn => {
@@ -63,6 +70,10 @@ filterBtns.forEach(btn => {
     filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const filter = btn.dataset.filter;
+
+    // For the google filter: show/hide the whole ml-badges-section for a nicer UX
+    const mlSection = document.getElementById('ml-badges-section');
+
     certCards.forEach(card => {
       if (filter === 'all' || card.dataset.category === filter) {
         card.classList.remove('hidden');
@@ -70,6 +81,15 @@ filterBtns.forEach(btn => {
         card.classList.add('hidden');
       }
     });
+
+    // Show/hide the ml-badges-section wrapper
+    if (mlSection) {
+      if (filter === 'all' || filter === 'google') {
+        mlSection.style.display = '';
+      } else {
+        mlSection.style.display = 'none';
+      }
+    }
   });
 });
 
@@ -81,8 +101,10 @@ const modalDesc = document.getElementById('modal-desc');
 const modalClose = document.getElementById('modal-close');
 
 certCards.forEach(card => {
-  card.addEventListener('click', () => {
-    modalImg.src = card.dataset.img;
+  card.addEventListener('click', (e) => {
+    // Don't open modal if user clicked the "View Badge" link
+    if (e.target.closest('.ml-view-btn')) return;
+    modalImg.src = card.dataset.img || 'google developer badge.png';
     modalImg.alt = card.dataset.title;
     modalTitle.textContent = card.dataset.title;
     modalDesc.textContent = card.dataset.desc;
