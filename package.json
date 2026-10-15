@@ -1,0 +1,11 @@
+{
+  "name": "oratoriq-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OratorIQ — Evidence-Based Speech Coach",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start"
+  }
+}

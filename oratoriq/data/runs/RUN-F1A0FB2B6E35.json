@@ -1,0 +1,197 @@
+{
+  "run_id": "RUN-F1A0FB2B6E35",
+  "created_at": "2026-10-15T12:57:31.747319+00:00",
+  "evaluation_mode": "audio_plus_transcript",
+  "scenario": "public_speaking",
+  "speech_prompt": null,
+  "overall_score": 62.5,
+  "grade": "D",
+  "coverage_ratio": 1.0,
+  "coverage_percentage": 100.0,
+  "eligible_criteria_count": 5,
+  "evaluated_criteria_count": 5,
+  "missing_criteria": [],
+  "criterion_scores": {
+    "content_and_relevance": {
+      "criterion_id": "content_and_relevance",
+      "criterion_name": "Content & Relevance",
+      "raw_rating": 3,
+      "normalized_score": 50.0,
+      "weight": 0.25,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Adequate topic discussion, but would benefit from more concrete factual evidence or examples.",
+      "scoring_anchor_matched": "Directly addresses the prompt; provides basic examples; points are mostly relevant."
+    },
+    "structure_and_coherence": {
+      "criterion_id": "structure_and_coherence",
+      "criterion_name": "Structure & Coherence",
+      "raw_rating": 4,
+      "normalized_score": 75.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Clear logical progression supported by 0 transition term(s) and structured sequencing.",
+      "scoring_anchor_matched": "Well-engineered logical arc; seamless thematic transitions; crisp thesis reinforcement in closing."
+    },
+    "fluency_and_pacing": {
+      "criterion_id": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Controlled, confident delivery: minimal verbal fillers (0 detected, 0.0%), 160.0 WPM speaking tempo.",
+      "scoring_anchor_matched": "Pristine fluency; zero distracting fillers; rhythmic mastery using pauses as rhetorical instruments."
+    },
+    "vocal_delivery": {
+      "criterion_id": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "raw_rating": 1,
+      "normalized_score": 0.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Flat pitch contour detected: 0.1 semitones dynamic range (Target: > 3.5 st). Muted vocal inflection.",
+      "scoring_anchor_matched": "Extremely flat monotone delivery; barely audible or clipping/strained vocal projection."
+    },
+    "clarity_and_conciseness": {
+      "criterion_id": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.15,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Crisp, precise vocabulary, high lexical discipline, and economical phrasing with zero redundant verbal crutches.",
+      "scoring_anchor_matched": "Laser-sharp clarity; elegant concision; every single word carries weight and intent."
+    }
+  },
+  "audio_features": {
+    "duration_sec": 3.0,
+    "speaking_rate_wpm": 160.0,
+    "total_words": 8,
+    "total_pauses": 0,
+    "mean_pause_duration_sec": 0.0,
+    "max_pause_duration_sec": 0.0,
+    "silent_region_proportion": 0.0,
+    "pitch_f0_mean_hz": 220.9,
+    "pitch_f0_std_hz": 0.5,
+    "pitch_semitone_range": 0.1,
+    "is_monotonous": true,
+    "rms_energy_mean": 0.2121,
+    "dynamic_range_db": 0.1,
+    "clipping_ratio": 0.0,
+    "snr_db_estimate": 0.0,
+    "is_audio_available": true
+  },
+  "transcript_annotation": {
+    "text": "Good morning everyone, today we present our project.",
+    "segments": [
+      {
+        "id": 1,
+        "text": "Good morning everyone, today we present our project.",
+        "start_time": 0.0,
+        "end_time": 3.0
+      }
+    ],
+    "words": [
+      {
+        "word": "Good",
+        "start_time": 0.0,
+        "end_time": 0.38,
+        "tag": null
+      },
+      {
+        "word": "morning",
+        "start_time": 0.38,
+        "end_time": 0.75,
+        "tag": null
+      },
+      {
+        "word": "everyone",
+        "start_time": 0.75,
+        "end_time": 1.12,
+        "tag": null
+      },
+      {
+        "word": "today",
+        "start_time": 1.12,
+        "end_time": 1.5,
+        "tag": null
+      },
+      {
+        "word": "we",
+        "start_time": 1.5,
+        "end_time": 1.88,
+        "tag": null
+      },
+      {
+        "word": "present",
+        "start_time": 1.88,
+        "end_time": 2.25,
+        "tag": null
+      },
+      {
+        "word": "our",
+        "start_time": 2.25,
+        "end_time": 2.62,
+        "tag": null
+      },
+      {
+        "word": "project",
+        "start_time": 2.62,
+        "end_time": 3.0,
+        "tag": null
+      }
+    ],
+    "filler_words_detected": [],
+    "repetitions_detected": [],
+    "readability_flesch_score": 50.7,
+    "detected_language": "en"
+  },
+  "feedback_items": [
+    {
+      "feedback_id": "FB-2767015C",
+      "rubric_criterion": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "observed_issue": "Narrow fundamental frequency pitch variation (0.1 semitones). Speech exhibits flat tonal contour.",
+      "evidence_type": "acoustic_measurement",
+      "transcript_excerpt": null,
+      "timestamp_range": null,
+      "measured_value": "Pitch range: 0.1 semitones (Target: > 3.5 semitones)",
+      "explanation": "A flat pitch contour sounds like a mechanical recital and causes audience disengagement.",
+      "recommended_action": "Elevate pitch by 2-3 semitones on the focal operative word in each sentence (nouns, action verbs, contrast words).",
+      "example_rewrite_or_exercise": "Pitch Staircase Exercise: Speak the sentence 'We increased revenue by thirty percent'. Step your pitch upward on 'increased' and peak on 'thirty', before resolving downward on 'percent'.",
+      "severity": "high",
+      "evaluator_method": "fundamental_frequency_pyin_contour_analyzer",
+      "limitations": "Calculates fundamental vocal fold vibration (F0); influenced by microphone frequency response and room reverberation."
+    }
+  ],
+  "contrastive_matches": [
+    {
+      "matched_pair_id": "PAIR-PUB-05",
+      "scenario": "public_speaking",
+      "primary_flaw": "monotonous_vocal_delivery",
+      "ideal_sample_id": "PUB-05-IDEAL",
+      "flawed_sample_id": "PUB-05-FLAWED",
+      "similarity_explanation": "Selected from scenario 'public_speaking' illustrating calibration for 'monotonous_vocal_delivery'.",
+      "contrastive_delta_analysis": "Illustrates how emotional range and pitch contrast are essential to connect with donors compared to dry recital."
+    }
+  ],
+  "reproducibility": {
+    "run_id": "RUN-F1A0FB2B6E35",
+    "software_version": "1.0.0",
+    "evaluation_mode": "audio_plus_transcript",
+    "input_sha256": "7b0cbf35adedff8e463e3d9d4907767a3612dd5ad5b503c77a021352cfb90891",
+    "dataset_version": "1.0.0",
+    "dataset_hash": "50dfa86c3b9a9dfb39a54a6fd24ab1a4e21e3a769fdc72c402bc9644fd731db4",
+    "rubric_id": "speech_default_v1",
+    "rubric_version": "1.0.0",
+    "rubric_hash": "7f08bbb853038a58",
+    "aggregation_formula": "sum(normalized_criterion_score * weight) / sum(available_weights)",
+    "normalized_scale": "Linear (rating - 1) / 4.0 * 100.0",
+    "timestamp_utc": "2026-10-15T12:57:31.747319+00:00"
+  }
+}

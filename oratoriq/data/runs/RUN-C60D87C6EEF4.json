@@ -1,0 +1,248 @@
+{
+  "run_id": "RUN-C60D87C6EEF4",
+  "created_at": "2026-10-15T11:42:49.571641+00:00",
+  "evaluation_mode": "transcript_only",
+  "scenario": "interview_answers",
+  "speech_prompt": "Tell me about a cloud migration project you led.",
+  "overall_score": 50.0,
+  "grade": "F",
+  "coverage_ratio": 0.8,
+  "coverage_percentage": 80.0,
+  "eligible_criteria_count": 5,
+  "evaluated_criteria_count": 4,
+  "missing_criteria": [
+    "vocal_delivery"
+  ],
+  "criterion_scores": {
+    "content_and_relevance": {
+      "criterion_id": "content_and_relevance",
+      "criterion_name": "Content & Relevance",
+      "raw_rating": 2,
+      "normalized_score": 25.0,
+      "weight": 0.25,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Low topic keyword alignment with the requested scenario prompt.",
+      "scoring_anchor_matched": "Superficially touches the topic; weak supporting evidence; generic platitudes."
+    },
+    "structure_and_coherence": {
+      "criterion_id": "structure_and_coherence",
+      "criterion_name": "Structure & Coherence",
+      "raw_rating": 3,
+      "normalized_score": 50.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Opening: Purposeful hook; Transitions: 0 detected (none); Conclusion: Abrupt/trailing.",
+      "scoring_anchor_matched": "Identifiable opening, body, and conclusion; simple chronological or list transitions."
+    },
+    "fluency_and_pacing": {
+      "criterion_id": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Filler word density: 0.0% (0 fillers in 19 words).",
+      "scoring_anchor_matched": "Pristine fluency; zero distracting fillers; rhythmic mastery using pauses as rhetorical instruments."
+    },
+    "vocal_delivery": {
+      "criterion_id": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "raw_rating": null,
+      "normalized_score": null,
+      "weight": 0.2,
+      "status": "unavailable",
+      "reason": "Acoustic evaluation unavailable in transcript-only mode; vocal delivery cannot be measured without audio recording.",
+      "evidence_summary": "Unavailable: Requires audio waveform recording to measure fundamental frequency (F0), dynamic loudness, and vocal inflection.",
+      "scoring_anchor_matched": null
+    },
+    "clarity_and_conciseness": {
+      "criterion_id": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "raw_rating": 2,
+      "normalized_score": 25.0,
+      "weight": 0.15,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Low readability index (18.4/100) or immediate phrase repetition (0 loops detected).",
+      "scoring_anchor_matched": "Wordy and roundabout sentences; repetitive phrasing; relies on filler phrases like 'in other words'."
+    }
+  },
+  "audio_features": null,
+  "transcript_annotation": {
+    "text": "During our quarterly sprint, we migrated thirty microservices to Kubernetes, eliminating fifty thousand dollars in monthly EC2 hosting costs.",
+    "segments": [
+      {
+        "id": 1,
+        "text": "During our quarterly sprint, we migrated thirty microservices to Kubernetes, eliminating fifty thousand dollars in monthly EC2 hosting costs.",
+        "start_time": null,
+        "end_time": null
+      }
+    ],
+    "words": [
+      {
+        "word": "During",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "our",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "quarterly",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "sprint",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "we",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "migrated",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "thirty",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "microservices",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "to",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "Kubernetes",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "eliminating",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "fifty",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "thousand",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "dollars",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "in",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "monthly",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "EC2",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "hosting",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "costs",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      }
+    ],
+    "filler_words_detected": [],
+    "repetitions_detected": [],
+    "readability_flesch_score": 18.4,
+    "detected_language": "en"
+  },
+  "feedback_items": [
+    {
+      "feedback_id": "FB-3168F83B",
+      "rubric_criterion": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "observed_issue": "Dense, convoluted syntactic complexity (Flesch score: 18.4).",
+      "evidence_type": "transcript_pattern",
+      "transcript_excerpt": "During our quarterly sprint, we migrated thirty microservices to Kubernetes, eliminating fifty thous",
+      "timestamp_range": null,
+      "measured_value": "Flesch Reading Ease: 18.4 / 100 (Target: > 55.0 for spoken clarity)",
+      "explanation": "Spoken language requires shorter syntactic clauses than written text. Overly long compound sentences lose listeners who cannot re-read.",
+      "recommended_action": "Split compound clauses joined by 'and', 'which', or 'because' into two distinct declarative sentences.",
+      "example_rewrite_or_exercise": "The Two-Breath Rule: If you cannot comfortably utter a sentence in a single calm breath, insert a period and begin a new sentence.",
+      "severity": "medium",
+      "evaluator_method": "flesch_kincaid_syntactic_analyzer",
+      "limitations": "Flesch formula is based on syllable count and sentence length; specialized domain terminology naturally lowers the index."
+    }
+  ],
+  "contrastive_matches": [
+    {
+      "matched_pair_id": "PAIR-INT-04",
+      "scenario": "interview_answers",
+      "primary_flaw": "unsupported_claims",
+      "ideal_sample_id": "INT-04-IDEAL",
+      "flawed_sample_id": "INT-04-FLAWED",
+      "similarity_explanation": "Selected from scenario 'interview_answers' illustrating calibration for 'unsupported_claims'.",
+      "contrastive_delta_analysis": "Contrasts genuine self-awareness and active systems of behavioral mitigation against a clichéd humblebrag."
+    }
+  ],
+  "reproducibility": {
+    "run_id": "RUN-C60D87C6EEF4",
+    "software_version": "1.0.0",
+    "evaluation_mode": "transcript_only",
+    "input_sha256": "8865b6eefdd9337000489068028cd4159343b736427046dd0a574c0346ed9bb7",
+    "dataset_version": "1.0.0",
+    "dataset_hash": "50dfa86c3b9a9dfb39a54a6fd24ab1a4e21e3a769fdc72c402bc9644fd731db4",
+    "rubric_id": "speech_default_v1",
+    "rubric_version": "1.0.0",
+    "rubric_hash": "7f08bbb853038a58",
+    "aggregation_formula": "sum(normalized_criterion_score * weight) / sum(available_weights)",
+    "normalized_scale": "Linear (rating - 1) / 4.0 * 100.0",
+    "timestamp_utc": "2026-10-15T11:42:49.571641+00:00"
+  }
+}

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OratorIQ — Evidence-Based Speech Coach</title>
+  <meta name="description" content="Evidence-based speech evaluation and delivery coaching system with custom contrastive datasets, physical acoustic telemetry, and reproducible rubric-based scoring.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+          <line x1="12" y1="19" x2="12" y2="23"></line>
+          <line x1="8" y1="23" x2="16" y2="23"></line>
+        </svg>
+      </div>
+      <div class="brand-title">
+        <h1>ORATORIQ</h1>
+        <span class="brand-badge">Evidence-Based Speech Coach</span>
+      </div>
+    </div>
+
+    <!-- Global Navigation Tabs -->
+    <nav class="nav-tabs" role="tablist">
+      <button class="nav-tab-btn active" data-view="viewHome" id="tabHome">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Home</span>
+      </button>
+      <button class="nav-tab-btn" data-view="viewEvaluate" id="tabEvaluate">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+        <span>Speech Evaluation</span>
+      </button>
+      <button class="nav-tab-btn" data-view="viewReport" id="tabReport">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+        <span>Evaluation Report</span>
+      </button>
+      <button class="nav-tab-btn" data-view="viewDataset" id="tabDataset">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+        <span>Dataset Explorer</span>
+        <span class="badge-mini">52 Pairs</span>
+      </button>
+      <button class="nav-tab-btn" data-view="viewRubrics" id="tabRubrics">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <span>Rubric Editor</span>
+      </button>
+      <button class="nav-tab-btn" data-view="viewHistory" id="tabHistory">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>History</span>
+      </button>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="nav-actions">
+      <div id="engineStatusPill" class="status-pill" title="Checking speech audio and evaluation capabilities...">
+        <span class="status-dot"></span>
+        <span id="engineStatusText">Connecting Engine...</span>
+      </div>
+
+      <button id="quickDemoBtn" class="btn btn-demo" title="Run 1-Click Guided Speech Evaluation Demo">
+        <span>🚀 1-Click Demo</span>
+      </button>
+
+      <a href="/docs" target="_blank" class="btn btn-secondary" title="View FastAPI REST API Documentation">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        <span>API Docs</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main class="app-container">
+
+    <!-- ==================================================================== -->
+    <!-- PAGE A: HOME / DASHBOARD OVERVIEW                                    -->
+    <!-- ==================================================================== -->
+    <section id="viewHome" class="view-section active">
+      <div class="hero-banner">
+        <div class="hero-badge">EVIDENCE-BASED SPEECH EVALUATION PLATFORM</div>
+        <h2 class="hero-title">Objective, Reproducible Speech Delivery Coaching</h2>
+        <p class="hero-subtitle">
+          OratorIQ combines genuine physical acoustic signal processing, aligned transcription, and a custom contrastive corpus of 52 ideal vs. flawed speech pairs to generate auditable, rubric-based scores and actionable delivery drills.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-large" onclick="app.navigateTo('viewEvaluate')">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+            <span>Start Speech Evaluation</span>
+          </button>
+          <button class="btn btn-secondary btn-large" onclick="app.navigateTo('viewDataset')">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <span>Explore 52 Contrastive Pairs</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Core Telemetry Metrics -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon" style="color: var(--accent-cyan); background: rgba(6, 182, 212, 0.1);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="stat-meta">
+            <div class="stat-number">5 Axes</div>
+            <div class="stat-label">Configurable Evaluation Rubric</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7.5" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+          </div>
+          <div class="stat-meta">
+            <div class="stat-number">52 Pairs</div>
+            <div class="stat-label">Curated Contrastive Dataset</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="color: var(--accent-indigo); background: rgba(99, 102, 241, 0.1);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </div>
+          <div class="stat-meta">
+            <div class="stat-number">100% Real</div>
+            <div class="stat-label">Measurable Acoustic Signal Features</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.1);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="stat-meta">
+            <div class="stat-number">SHA-256</div>
+            <div class="stat-label">Deterministic Run Audit Trail</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Capabilities Grid -->
+      <div class="section-heading">
+        <h3>System Architecture & Capabilities</h3>
+        <span class="subtext">Rigorous signal processing and transparent evaluation integrity</span>
+      </div>
+
+      <div class="capabilities-grid">
+        <div class="card cap-card">
+          <div class="cap-header">
+            <span class="cap-status active">ACTIVE</span>
+            <h4>Physical Acoustic Signal Extraction</h4>
+          </div>
+          <p>Extracts authentic physical speech properties: Words Per Minute (WPM), pause distribution, fundamental frequency F0 pitch contour, semitone variation, loudness dynamic range, and recording SNR.</p>
+          <div class="cap-footer"><code>librosa</code> • <code>soundfile</code> • <code>scipy.signal</code></div>
+        </div>
+
+        <div class="card cap-card">
+          <div class="cap-header">
+            <span class="cap-status active">ACTIVE</span>
+            <h4>Custom Contrastive Dataset</h4>
+          </div>
+          <p>52 curated ideal vs. flawed speech pairs across Public Speaking, Interviews, Pitches, Presentations, and Academic Explanations with 13 distinct flaw categories and dimension-specific scoring.</p>
+          <div class="cap-footer">SHA-256 Verified • 104 Exemplars</div>
+        </div>
+
+        <div class="card cap-card">
+          <div class="cap-header">
+            <span class="cap-status active">ACTIVE</span>
+            <h4>Configurable 5-Axis Rubric</h4>
+          </div>
+          <p>Strict weighted formula (summing to 100%) mapping 1-5 ordinal scoring anchors into normalized 0-100 scores. Transparently reports missing coverage in transcript-only mode.</p>
+          <div class="cap-footer">Content 25% • Structure 20% • Fluency 20% • Vocal 20% • Clarity 15%</div>
+        </div>
+
+        <div class="card cap-card">
+          <div class="cap-header">
+            <span class="cap-status active">ACTIVE</span>
+            <h4>Evidence-Linked Delivery Feedback</h4>
+          </div>
+          <p>Generates actionable, grounded feedback items with observed timestamps, measured physical quantities, targeted recommendations, and concrete practice drills.</p>
+          <div class="cap-footer">Drills • Metronomes • Thought-Group Sprints</div>
+        </div>
+      </div>
+
+      <!-- Recent Evaluations Table -->
+      <div class="section-heading" style="margin-top: 40px;">
+        <h3>Recent Evaluation Runs</h3>
+        <button class="btn btn-secondary btn-sm" onclick="app.loadEvaluationHistory()">Refresh History</button>
+      </div>
+
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <table class="data-table" id="homeRecentRunsTable">
+          <thead>
+            <tr>
+              <th>Run ID</th>
+              <th>Date / Time</th>
+              <th>Scenario</th>
+              <th>Mode</th>
+              <th>Overall Score</th>
+              <th>Coverage</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="homeRecentRunsBody">
+            <tr>
+              <td colspan="7" class="empty-state">No evaluations recorded yet. Click "Start Speech Evaluation" above to evaluate your first recording.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================== -->
+    <!-- PAGE B: SPEECH EVALUATION STUDIO                                     -->
+    <!-- ==================================================================== -->
+    <section id="viewEvaluate" class="view-section">
+      <div class="page-header">
+        <div>
+          <h2>Speech Evaluation Studio</h2>
+          <p class="subtext">Upload an audio recording, speak live via browser microphone, or submit a speech transcript.</p>
+        </div>
+        <div class="mode-badge" id="evalStudioModeBadge">MODE: AUDIO + TRANSCRIPT</div>
+      </div>
+
+      <div class="eval-studio-layout">
+        <!-- Left Panel: Input & Audio Recorder -->
+        <div class="eval-input-panel">
+          
+          <!-- Mode Tabs: Mic vs File vs Transcript -->
+          <div class="input-mode-tabs">
+            <button class="input-mode-btn active" id="modeBtnMic" onclick="app.setInputMode('mic')">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg>
+              <span>Live Microphone</span>
+            </button>
+            <button class="input-mode-btn" id="modeBtnUpload" onclick="app.setInputMode('upload')">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              <span>Audio File Upload</span>
+            </button>
+            <button class="input-mode-btn" id="modeBtnText" onclick="app.setInputMode('text')">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <span>Transcript-Only Mode</span>
+            </button>
+          </div>
+
+          <!-- Section 1: Microphone Recorder -->
+          <div id="sectionMicRecorder" class="card input-section active">
+            <div class="recorder-visualizer-container">
+              <canvas id="micWaveformCanvas" width="600" height="100"></canvas>
+              <div class="recording-time-display" id="recordingTimeDisplay">00:00</div>
+            </div>
+
+            <div class="recorder-controls">
+              <button id="recordStartBtn" class="btn btn-record" onclick="app.startRecording()">
+                <span class="record-dot"></span>
+                <span id="recordBtnText">Start Recording</span>
+              </button>
+              <button id="recordStopBtn" class="btn btn-secondary" onclick="app.stopRecording()" disabled>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><rect x="6" y="6" width="12" height="12"></rect></svg>
+                <span>Stop</span>
+              </button>
+              <button id="recordResetBtn" class="btn btn-secondary" onclick="app.resetRecording()" disabled>
+                <span>Reset</span>
+              </button>
+            </div>
+
+            <div id="recordingPreviewContainer" class="audio-preview-box" style="display: none;">
+              <span class="preview-label">Captured Audio Preview:</span>
+              <audio id="audioPreviewPlayer" controls style="width: 100%; margin-top: 8px;"></audio>
+            </div>
+          </div>
+
+          <!-- Section 2: File Upload -->
+          <div id="sectionFileUpload" class="card input-section">
+            <div class="file-drop-zone" id="fileDropZone">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              <p>Drag and drop an audio recording here, or <span class="accent-link">browse files</span></p>
+              <span class="file-subtext">Supported: WAV, WebM, MP3, OGG, FLAC (Max 50MB, up to 10 mins)</span>
+              <input type="file" id="audioFileInput" accept="audio/*,.wav,.mp3,.webm,.ogg,.flac" style="display: none;">
+            </div>
+            <div id="selectedFileInfo" class="selected-file-info" style="display: none;">
+              <span id="selectedFileName">filename.wav</span>
+              <span id="selectedFileSize">0.0 MB</span>
+              <button class="btn btn-sm btn-secondary" onclick="app.clearSelectedFile()">Remove</button>
+            </div>
+          </div>
+
+          <!-- Section 3: Speech Transcript Input -->
+          <div class="card transcript-input-card">
+            <div class="form-row-header">
+              <label for="evalTranscriptInput" class="form-label">
+                <strong>Speech Transcript</strong>
+                <span class="label-hint">(Auto-populated via live speech recognition or pasted manually)</span>
+              </label>
+              <button id="webSpeechToggleBtn" class="btn btn-sm btn-secondary" onclick="app.toggleWebSpeechRecognition()">
+                <span>🎙️ Live Speech-to-Text</span>
+              </button>
+            </div>
+            <textarea id="evalTranscriptInput" class="form-textarea" rows="6" placeholder="Spoken speech transcript will appear here automatically while recording, or you can paste the text of the speech directly..."></textarea>
+            <div class="word-counter-row">
+              <span id="wordCountLabel">0 words • 0 characters</span>
+              <span id="transcriptModeHint" class="badge-mini">Aligned with audio</span>
+            </div>
+          </div>
+
+          <!-- Section 4: Scenario & Prompt Settings -->
+          <div class="card config-card">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="evalScenarioSelect" class="form-label">Communication Scenario</label>
+                <select id="evalScenarioSelect" class="form-select">
+                  <option value="public_speaking">Public Speaking & Keynotes</option>
+                  <option value="interview_answers">Job Interview Answers</option>
+                  <option value="persuasive_pitches">Persuasive Pitches</option>
+                  <option value="presentation_delivery">Presentation & Business Reviews</option>
+                  <option value="academic_explanations">Academic & Technical Explanations</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="evalRubricSelect" class="form-label">Evaluation Rubric</label>
+                <select id="evalRubricSelect" class="form-select">
+                  <option value="speech_default_v1">OratorIQ Standard Speech Rubric (5 Axes, v1.0)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 14px;">
+              <label for="evalPromptInput" class="form-label">Intended Prompt / Communication Goal (Optional)</label>
+              <input type="text" id="evalPromptInput" class="form-input" placeholder="e.g. 'Explain how to mitigate data drift in production ML models' or 'Inspire donors to support rare diseases'">
+            </div>
+          </div>
+
+          <!-- Action Row & Progress -->
+          <div class="eval-action-row">
+            <button id="runEvaluationBtn" class="btn btn-primary btn-large" onclick="app.executeEvaluation()">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Run Speech Evaluation</span>
+            </button>
+            <button class="btn btn-secondary btn-large" onclick="app.resetEvaluationForm()">Reset</button>
+          </div>
+
+          <!-- Live Multi-stage Progress Indicator -->
+          <div id="evalProgressBox" class="card progress-box" style="display: none;">
+            <div class="progress-bar-wrapper">
+              <div id="evalProgressBar" class="progress-bar-fill" style="width: 10%;"></div>
+            </div>
+            <div class="progress-status-row">
+              <span id="evalProgressStepText">Validating audio payload...</span>
+              <span id="evalProgressPercentText">10%</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Panel: Contrastive Calibration Reference -->
+        <div class="eval-reference-panel">
+          <div class="card ref-card">
+            <h3>Contrastive Calibration Reference</h3>
+            <p class="subtext">How your speech will be evaluated against curated standards:</p>
+            
+            <div class="ref-criteria-list">
+              <div class="ref-item">
+                <span class="ref-bullet" style="background: var(--accent-indigo);"></span>
+                <div>
+                  <strong>Content & Relevance (25%)</strong>
+                  <p>Premise support, factual grounding, scenario responsiveness, depth.</p>
+                </div>
+              </div>
+              <div class="ref-item">
+                <span class="ref-bullet" style="background: var(--accent-cyan);"></span>
+                <div>
+                  <strong>Structure & Coherence (20%)</strong>
+                  <p>Opening hook, signposted transitions, logical arc, memorable synthesis.</p>
+                </div>
+              </div>
+              <div class="ref-item">
+                <span class="ref-bullet" style="background: var(--accent-emerald);"></span>
+                <div>
+                  <strong>Fluency & Pacing (20%)</strong>
+                  <p>Target 130-160 WPM, purposeful pause placement, filler word density (&lt; 2%).</p>
+                </div>
+              </div>
+              <div class="ref-item">
+                <span class="ref-bullet" style="background: var(--accent-violet);"></span>
+                <div>
+                  <strong>Vocal Delivery (20%)</strong>
+                  <p>Fundamental frequency (F0) pitch dynamic range, absence of flat monotony, SNR.</p>
+                  <span class="note-pill">Unavailable in Transcript-Only mode</span>
+                </div>
+              </div>
+              <div class="ref-item">
+                <span class="ref-bullet" style="background: var(--accent-amber);"></span>
+                <div>
+                  <strong>Clarity & Conciseness (15%)</strong>
+                  <p>Readability index, lexical diversity, avoidance of repetitive looping.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="callout-box" style="margin-top: 20px;">
+              <strong>1-Click Golden Demo:</strong>
+              <p>Want to see the evaluator in action immediately? Click <strong>🚀 1-Click Demo</strong> in the top navigation bar to run an instant golden speech evaluation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================== -->
+    <!-- PAGE C: EVALUATION REPORT & FEEDBACK                                 -->
+    <!-- ==================================================================== -->
+    <section id="viewReport" class="view-section">
+      <div id="reportEmptyState" class="card empty-report-card">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <h3>No Evaluation Report Loaded</h3>
+        <p>Run a new speech evaluation in the Studio, or select an evaluation from the History tab.</p>
+        <button class="btn btn-primary" onclick="app.navigateTo('viewEvaluate')">Go to Evaluation Studio</button>
+      </div>
+
+      <div id="reportContentContainer" style="display: none;">
+        
+        <!-- Run Meta Header -->
+        <div class="report-header-banner">
+          <div>
+            <div class="report-breadcrumbs">
+              <span>EVALUATION REPORT</span> / <span id="reportRunIdDisplay">RUN-XXXX</span>
+            </div>
+            <h2 id="reportScenarioTitle">Public Speaking & Keynotes</h2>
+            <div class="report-meta-tags">
+              <span class="meta-tag" id="reportModeTag">Audio + Transcript</span>
+              <span class="meta-tag" id="reportTimestampTag">2026-10-15</span>
+              <span class="meta-tag" id="reportRubricVerTag">Rubric v1.0.0</span>
+            </div>
+          </div>
+
+          <div class="report-export-actions">
+            <button class="btn btn-secondary" onclick="app.exportJsonReport()" title="Export verifiable reproducibility JSON">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Export JSON</span>
+            </button>
+            <button class="btn btn-secondary" onclick="app.exportHtmlReport()" title="Open standalone printable audit report">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              <span>Printable Report</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Top Metrics Cards -->
+        <div class="report-summary-grid">
+          <div class="card score-summary-card">
+            <div class="score-dial-wrapper">
+              <svg class="score-circle-svg" viewBox="0 0 120 120">
+                <circle class="score-circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle id="reportScoreGaugeCircle" class="score-circle-bar" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <div class="score-dial-text">
+                <span id="reportOverallScoreNum" class="dial-score">--</span>
+                <span class="dial-max">/ 100</span>
+              </div>
+            </div>
+            <div class="score-summary-meta">
+              <div class="grade-badge" id="reportGradeBadge">GRADE --</div>
+              <div class="coverage-badge" id="reportCoverageBadge">100% Coverage</div>
+              <div class="rubric-formula-hint">Normalized weighted average over available axes</div>
+            </div>
+          </div>
+
+          <!-- Radar Chart Card -->
+          <div class="card radar-chart-card">
+            <div class="card-header">
+              <h4>Evaluated Rubric Telemetry</h4>
+              <span class="subtext">Actual measured axes</span>
+            </div>
+            <div class="radar-canvas-container">
+              <canvas id="rubricRadarCanvas" width="360" height="260"></canvas>
+            </div>
+          </div>
+
+          <!-- Key Acoustic Metrics Box -->
+          <div class="card acoustic-metrics-card">
+            <div class="card-header">
+              <h4>Acoustic Signal Measurements</h4>
+              <span class="subtext" id="reportAcousticStatusSubtext">Physical Signal Metrics</span>
+            </div>
+            <div class="acoustic-stats-grid" id="reportAcousticStatsGrid">
+              <div class="ac-stat">
+                <span class="ac-label">Speaking Rate</span>
+                <span class="ac-value" id="acStatWpm">-- WPM</span>
+              </div>
+              <div class="ac-stat">
+                <span class="ac-label">Pause Ratio</span>
+                <span class="ac-value" id="acStatPauses">--</span>
+              </div>
+              <div class="ac-stat">
+                <span class="ac-label">Pitch Dynamic Range</span>
+                <span class="ac-value" id="acStatPitch">-- st</span>
+              </div>
+              <div class="ac-stat">
+                <span class="ac-label">Signal-to-Noise Ratio</span>
+                <span class="ac-value" id="acStatSnr">-- dB</span>
+              </div>
+            </div>
+            <div id="reportAcousticUnavailableAlert" class="alert-box alert-unavailable" style="display: none;">
+              <strong>Vocal Delivery Unavailable:</strong> Evaluated in Transcript-Only mode. Acoustic measurements require audio recording.
+            </div>
+          </div>
+        </div>
+
+        <!-- Audio Player & Timeline Bar (if audio available) -->
+        <div id="reportAudioPlayerCard" class="card audio-timeline-card" style="display: none;">
+          <div class="card-header">
+            <h4>Audio Waveform & Playback Synchronization</h4>
+            <span class="subtext">Click any transcript segment below to seek audio</span>
+          </div>
+          <audio id="reportAudioElement" controls style="width: 100%; margin-top: 10px;"></audio>
+        </div>
+
+        <!-- Timestamped Transcript Inspector -->
+        <div class="card transcript-inspector-card">
+          <div class="card-header">
+            <h4>Timestamped Speech Transcript</h4>
+            <div class="transcript-badges">
+              <span class="badge" id="reportFillerCountBadge">0 Fillers Detected</span>
+              <span class="badge" id="reportReadabilityBadge">Flesch Ease: 60.0</span>
+            </div>
+          </div>
+          <div class="transcript-segments-feed" id="reportTranscriptSegmentsFeed">
+            <!-- Populated dynamically with interactive segment spans -->
+          </div>
+        </div>
+
+        <!-- 5-Axis Criterion Scoring Table -->
+        <div class="card criterion-table-card">
+          <div class="card-header">
+            <h4>Rubric Criterion Breakdown & Scoring Anchors</h4>
+            <span class="subtext">Exact 1-5 ratings mapped to normalized 0-100 scores</span>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Weight</th>
+                <th>Rating</th>
+                <th>Normalized Score</th>
+                <th>Status</th>
+                <th>Scoring Anchor Matched & Evidence</th>
+              </tr>
+            </thead>
+            <tbody id="reportCriterionTableBody">
+              <!-- Populated dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Evidence-Linked Actionable Recommendations -->
+        <div class="section-heading" style="margin-top: 36px;">
+          <h3>Evidence-Linked Actionable Recommendations</h3>
+          <span class="subtext">Prioritized delivery drills grounded in actual measured timestamps and metrics</span>
+        </div>
+        <div class="feedback-cards-grid" id="reportFeedbackCardsGrid">
+          <!-- Populated dynamically with FeedbackItem cards -->
+        </div>
+
+        <!-- Contrastive Pair Comparison -->
+        <div class="section-heading" style="margin-top: 36px;">
+          <h3>Contrastive Exemplar Calibration</h3>
+          <span class="subtext">Calibrated against our custom dataset of ideal vs. flawed speeches</span>
+        </div>
+        <div class="card contrastive-match-card" id="reportContrastiveMatchCard">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Reproducibility & Audit Trail -->
+        <div class="reproducibility-footer card">
+          <div class="card-header">
+            <h4>Verifiable Reproducibility Audit Trail</h4>
+            <span class="subtext">Every evaluation is hashed and reproducible</span>
+          </div>
+          <div class="repro-grid" id="reportReproGrid">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================================================================== -->
+    <!-- PAGE D: CONTRASTIVE DATASET EXPLORER                                 -->
+    <!-- ==================================================================== -->
+    <section id="viewDataset" class="view-section">
+      <div class="page-header">
+        <div>
+          <h2>Contrastive Speech Dataset Explorer</h2>
+          <p class="subtext">Inspect our genuine curated corpus of 52 ideal vs. flawed speech pairs across 5 communication scenarios.</p>
+        </div>
+        <button class="btn btn-primary" onclick="app.runDatasetValidation()">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Validate Dataset Schema</span>
+        </button>
+      </div>
+
+      <!-- Dataset Manifest Summary Banner -->
+      <div class="card dataset-manifest-banner">
+        <div class="manifest-stat">
+          <span class="m-label">Dataset Version</span>
+          <span class="m-val" id="datasetManifestVersion">1.0.0</span>
+        </div>
+        <div class="manifest-stat">
+          <span class="m-label">Contrastive Pairs</span>
+          <span class="m-val" id="datasetManifestPairs">52 Pairs</span>
+        </div>
+        <div class="manifest-stat">
+          <span class="m-label">Total Speech Samples</span>
+          <span class="m-val" id="datasetManifestSamples">104 Samples</span>
+        </div>
+        <div class="manifest-stat">
+          <span class="m-label">Dataset SHA-256 Hash</span>
+          <span class="m-val hash-text" id="datasetManifestHash">50dfa86c3b9a...</span>
+        </div>
+      </div>
+
+      <!-- Filters & Search Toolbar -->
+      <div class="dataset-filters-toolbar">
+        <div class="filter-group">
+          <label for="datasetScenarioFilter" class="form-label">Filter Scenario:</label>
+          <select id="datasetScenarioFilter" class="form-select" onchange="app.filterDatasetPairs()">
+            <option value="ALL">All Scenarios (52 Pairs)</option>
+            <option value="public_speaking">Public Speaking (11 Pairs)</option>
+            <option value="interview_answers">Job Interview Answers (11 Pairs)</option>
+            <option value="persuasive_pitches">Persuasive Pitches (10 Pairs)</option>
+            <option value="presentation_delivery">Presentation Delivery (10 Pairs)</option>
+            <option value="academic_explanations">Academic Explanations (10 Pairs)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="datasetFlawFilter" class="form-label">Filter Primary Flaw:</label>
+          <select id="datasetFlawFilter" class="form-select" onchange="app.filterDatasetPairs()">
+            <option value="ALL">All Flaw Categories</option>
+            <option value="weak_opening">Weak Opening</option>
+            <option value="poor_logical_structure">Poor Logical Structure</option>
+            <option value="excessive_filler_words">Excessive Filler Words</option>
+            <option value="unnecessary_repetition">Unnecessary Repetition</option>
+            <option value="excessively_fast_pacing">Excessively Fast Pacing</option>
+            <option value="excessively_slow_pacing">Excessively Slow Pacing</option>
+            <option value="poorly_placed_pauses">Poorly Placed Pauses</option>
+            <option value="weak_transitions">Weak Transitions</option>
+            <option value="unclear_articulation">Unclear Articulation</option>
+            <option value="monotonous_vocal_delivery">Monotonous Vocal Delivery</option>
+            <option value="failure_to_answer_question">Failure to Answer Question</option>
+            <option value="unsupported_claims">Unsupported Claims</option>
+            <option value="weak_or_missing_conclusion">Weak / Missing Conclusion</option>
+          </select>
+        </div>
+
+        <div class="filter-group search-group">
+          <label for="datasetSearchInput" class="form-label">Search Transcripts:</label>
+          <input type="text" id="datasetSearchInput" class="form-input" placeholder="Search keywords..." oninput="app.filterDatasetPairs()">
+        </div>
+      </div>
+
+      <!-- Contrastive Pairs Feed -->
+      <div class="dataset-pairs-feed" id="datasetPairsFeed">
+        <!-- Rendered dynamically as side-by-side ideal vs flawed cards -->
+      </div>
+    </section>
+
+
+    <!-- ==================================================================== -->
+    <!-- PAGE E: RUBRIC CONFIGURATION EDITOR                                  -->
+    <!-- ==================================================================== -->
+    <section id="viewRubrics" class="view-section">
+      <div class="page-header">
+        <div>
+          <h2>Evaluation Rubric Configuration</h2>
+          <p class="subtext">Configure criteria weights, edit 1-5 scoring anchors, and save immutable versioned rubrics.</p>
+        </div>
+        <div class="rubric-hash-badge">
+          <span>Active Hash: </span>
+          <code id="activeRubricHashDisplay">speech_default_v1</code>
+        </div>
+      </div>
+
+      <!-- Weight Sum Validator Banner -->
+      <div class="card weight-validator-banner" id="rubricWeightValidatorBanner">
+        <div class="weight-status-info">
+          <h4>Total Weight Validation</h4>
+          <p>Criteria weights must sum to exactly 100% to ensure mathematical score normalization.</p>
+        </div>
+        <div class="weight-sum-indicator">
+          <span class="sum-number" id="rubricWeightSumDisplay">100.0%</span>
+          <span class="sum-status" id="rubricWeightSumStatus">VALID (1.0)</span>
+        </div>
+      </div>
+
+      <!-- 5 Criteria Weight Sliders & Anchors -->
+      <div class="rubric-criteria-editor-grid" id="rubricCriteriaEditorGrid">
+        <!-- Populated dynamically with weight sliders and 1-5 anchor editors -->
+      </div>
+
+      <div class="rubric-actions-row">
+        <button class="btn btn-primary btn-large" onclick="app.saveCustomRubric()">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+          <span>Save Immutable Rubric Version</span>
+        </button>
+        <button class="btn btn-secondary btn-large" onclick="app.resetRubricToDefaults()">Reset to Defaults</button>
+      </div>
+    </section>
+
+
+    <!-- ==================================================================== -->
+    <!-- PAGE F: EVALUATION HISTORY                                           -->
+    <!-- ==================================================================== -->
+    <section id="viewHistory" class="view-section">
+      <div class="page-header">
+        <div>
+          <h2>Evaluation History & Progress Tracking</h2>
+          <p class="subtext">Inspect past speech evaluations, compare progression under consistent rubrics, and export audit runs.</p>
+        </div>
+        <div class="history-filter-bar">
+          <select id="historyScenarioFilter" class="form-select" onchange="app.loadEvaluationHistory()">
+            <option value="">All Scenarios</option>
+            <option value="public_speaking">Public Speaking</option>
+            <option value="interview_answers">Job Interview</option>
+            <option value="persuasive_pitches">Persuasive Pitch</option>
+            <option value="presentation_delivery">Presentation Delivery</option>
+            <option value="academic_explanations">Academic Explanation</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Run ID</th>
+              <th>Date / Time</th>
+              <th>Scenario</th>
+              <th>Mode</th>
+              <th>Score</th>
+              <th>Grade</th>
+              <th>Coverage</th>
+              <th>Transcript Excerpt</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="evaluationHistoryTableBody">
+            <tr>
+              <td colspan="9" class="empty-state">Loading evaluation history...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Dialog for Dataset Validation Diagnostics -->
+  <div id="datasetValidationModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content card">
+      <div class="modal-header">
+        <h3>Dataset Schema & Integrity Audit</h3>
+        <button class="modal-close-btn" onclick="app.closeModal('datasetValidationModal')">&times;</button>
+      </div>
+      <div class="modal-body" id="datasetValidationModalBody">
+        <p>Running schema validation...</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="app.closeModal('datasetValidationModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

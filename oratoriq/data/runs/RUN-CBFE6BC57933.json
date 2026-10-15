@@ -1,0 +1,216 @@
+{
+  "run_id": "RUN-CBFE6BC57933",
+  "created_at": "2026-10-15T13:05:13.518562+00:00",
+  "evaluation_mode": "audio_plus_transcript",
+  "scenario": "public_speaking",
+  "speech_prompt": null,
+  "overall_score": 41.2,
+  "grade": "F",
+  "coverage_ratio": 1.0,
+  "coverage_percentage": 100.0,
+  "eligible_criteria_count": 5,
+  "evaluated_criteria_count": 5,
+  "missing_criteria": [],
+  "criterion_scores": {
+    "content_and_relevance": {
+      "criterion_id": "content_and_relevance",
+      "criterion_name": "Content & Relevance",
+      "raw_rating": 4,
+      "normalized_score": 75.0,
+      "weight": 0.25,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Substantive, grounded presentation backed by concrete empirical data (1 metrics/dates/specifications) and strong topic alignment.",
+      "scoring_anchor_matched": "Thorough and tailored coverage; insightful examples; clear alignment with audience and goal."
+    },
+    "structure_and_coherence": {
+      "criterion_id": "structure_and_coherence",
+      "criterion_name": "Structure & Coherence",
+      "raw_rating": 3,
+      "normalized_score": 50.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Basic narrative sequence present, but lacks clear signposted transitions between major ideas.",
+      "scoring_anchor_matched": "Identifiable opening, body, and conclusion; simple chronological or list transitions."
+    },
+    "fluency_and_pacing": {
+      "criterion_id": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "raw_rating": 2,
+      "normalized_score": 25.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Noticeable fluency friction (0.0% fillers, 0 pause hesitations).",
+      "scoring_anchor_matched": "Distracting filler words (5-8%); noticeable pacing surges or awkward mid-clause pauses."
+    },
+    "vocal_delivery": {
+      "criterion_id": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "raw_rating": 1,
+      "normalized_score": 0.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Flat pitch contour detected: 0.0 semitones dynamic range (Target: > 3.5 st). Muted vocal inflection.",
+      "scoring_anchor_matched": "Extremely flat monotone delivery; barely audible or clipping/strained vocal projection."
+    },
+    "clarity_and_conciseness": {
+      "criterion_id": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "raw_rating": 3,
+      "normalized_score": 50.0,
+      "weight": 0.15,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Fair clarity, but would benefit from more economical phrasing and concise discourse markers.",
+      "scoring_anchor_matched": "Clear main points; readable syntax; occasional redundancy that could be streamlined."
+    }
+  },
+  "audio_features": {
+    "duration_sec": 2.5,
+    "speaking_rate_wpm": 192.0,
+    "total_words": 8,
+    "total_pauses": 0,
+    "mean_pause_duration_sec": 0.0,
+    "max_pause_duration_sec": 0.0,
+    "silent_region_proportion": 0.0,
+    "pitch_f0_mean_hz": 200.5,
+    "pitch_f0_std_hz": 0.1,
+    "pitch_semitone_range": 0.0,
+    "is_monotonous": true,
+    "rms_energy_mean": 0.1414,
+    "dynamic_range_db": 0.0,
+    "clipping_ratio": 0.0,
+    "snr_db_estimate": 0.1,
+    "is_audio_available": true
+  },
+  "transcript_annotation": {
+    "text": "Audio speech delivery recorded for 2.5 seconds.",
+    "segments": [
+      {
+        "id": 1,
+        "text": "Audio speech delivery recorded for 2.5 seconds.",
+        "start_time": 0.0,
+        "end_time": 2.5
+      }
+    ],
+    "words": [
+      {
+        "word": "Audio",
+        "start_time": 0.0,
+        "end_time": 0.31,
+        "tag": null
+      },
+      {
+        "word": "speech",
+        "start_time": 0.31,
+        "end_time": 0.62,
+        "tag": null
+      },
+      {
+        "word": "delivery",
+        "start_time": 0.62,
+        "end_time": 0.94,
+        "tag": null
+      },
+      {
+        "word": "recorded",
+        "start_time": 0.94,
+        "end_time": 1.25,
+        "tag": null
+      },
+      {
+        "word": "for",
+        "start_time": 1.25,
+        "end_time": 1.56,
+        "tag": null
+      },
+      {
+        "word": "2",
+        "start_time": 1.56,
+        "end_time": 1.88,
+        "tag": null
+      },
+      {
+        "word": "5",
+        "start_time": 1.88,
+        "end_time": 2.19,
+        "tag": null
+      },
+      {
+        "word": "seconds",
+        "start_time": 2.19,
+        "end_time": 2.5,
+        "tag": null
+      }
+    ],
+    "filler_words_detected": [],
+    "repetitions_detected": [],
+    "readability_flesch_score": 50.7,
+    "detected_language": "en"
+  },
+  "feedback_items": [
+    {
+      "feedback_id": "FB-57F01F12",
+      "rubric_criterion": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "observed_issue": "Rapid speaking tempo (192.0 WPM). High tempo risks cognitive overload for the audience.",
+      "evidence_type": "acoustic_measurement",
+      "transcript_excerpt": null,
+      "timestamp_range": {
+        "start": 0.0,
+        "end": 2.5
+      },
+      "measured_value": "192.0 WPM (Ideal professional range: 130 - 160 WPM)",
+      "explanation": "Pacing above 175 WPM leaves insufficient time for key points and data assertions to be absorbed.",
+      "recommended_action": "Anchor your delivery by consciously inserting a 1-second pause after every completed thesis statement or comma clause.",
+      "example_rewrite_or_exercise": "Metronome Pacing Exercise: Set a metronome to 140 BPM. Speak one word per beat across a 40-word paragraph to physically calibrate internal cadence.",
+      "severity": "medium",
+      "evaluator_method": "speech_duration_word_ratio_calculator",
+      "limitations": "Assumes continuous speech without multi-speaker turn taking."
+    },
+    {
+      "feedback_id": "FB-9F561AA5",
+      "rubric_criterion": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "observed_issue": "Narrow fundamental frequency pitch variation (0.0 semitones). Speech exhibits flat tonal contour.",
+      "evidence_type": "acoustic_measurement",
+      "transcript_excerpt": null,
+      "timestamp_range": null,
+      "measured_value": "Pitch range: 0.0 semitones (Target: > 3.5 semitones)",
+      "explanation": "A flat pitch contour sounds like a mechanical recital and causes audience disengagement.",
+      "recommended_action": "Elevate pitch by 2-3 semitones on the focal operative word in each sentence (nouns, action verbs, contrast words).",
+      "example_rewrite_or_exercise": "Pitch Staircase Exercise: Speak the sentence 'We increased revenue by thirty percent'. Step your pitch upward on 'increased' and peak on 'thirty', before resolving downward on 'percent'.",
+      "severity": "high",
+      "evaluator_method": "fundamental_frequency_pyin_contour_analyzer",
+      "limitations": "Calculates fundamental vocal fold vibration (F0); influenced by microphone frequency response and room reverberation."
+    }
+  ],
+  "contrastive_matches": [
+    {
+      "matched_pair_id": "PAIR-PUB-05",
+      "scenario": "public_speaking",
+      "primary_flaw": "monotonous_vocal_delivery",
+      "ideal_sample_id": "PUB-05-IDEAL",
+      "flawed_sample_id": "PUB-05-FLAWED",
+      "similarity_explanation": "Selected from scenario 'public_speaking' illustrating calibration for 'monotonous_vocal_delivery'.",
+      "contrastive_delta_analysis": "Illustrates how emotional range and pitch contrast are essential to connect with donors compared to dry recital."
+    }
+  ],
+  "reproducibility": {
+    "run_id": "RUN-CBFE6BC57933",
+    "software_version": "1.0.0",
+    "evaluation_mode": "audio_plus_transcript",
+    "input_sha256": "1da6f964cdce323f5ea72a5ff05d0f4a6133cf10dd67f0bee1b781b9c7aa431e",
+    "dataset_version": "1.0.0",
+    "dataset_hash": "50dfa86c3b9a9dfb39a54a6fd24ab1a4e21e3a769fdc72c402bc9644fd731db4",
+    "rubric_id": "speech_default_v1",
+    "rubric_version": "1.0.0",
+    "rubric_hash": "7f08bbb853038a58",
+    "aggregation_formula": "sum(normalized_criterion_score * weight) / sum(available_weights)",
+    "normalized_scale": "Linear (rating - 1) / 4.0 * 100.0",
+    "timestamp_utc": "2026-10-15T13:05:13.518562+00:00"
+  }
+}

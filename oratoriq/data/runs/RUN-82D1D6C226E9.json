@@ -1,0 +1,396 @@
+{
+  "run_id": "RUN-82D1D6C226E9",
+  "created_at": "2026-10-15T13:23:20.857498+00:00",
+  "evaluation_mode": "audio_plus_transcript",
+  "scenario": "persuasive_pitches",
+  "speech_prompt": "Municipal investment in protected bicycle infrastructure",
+  "overall_score": 61.2,
+  "grade": "D",
+  "coverage_ratio": 1.0,
+  "coverage_percentage": 100.0,
+  "eligible_criteria_count": 5,
+  "evaluated_criteria_count": 5,
+  "missing_criteria": [],
+  "criterion_scores": {
+    "content_and_relevance": {
+      "criterion_id": "content_and_relevance",
+      "criterion_name": "Content & Relevance",
+      "raw_rating": 2,
+      "normalized_score": 25.0,
+      "weight": 0.25,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Low topic alignment with the intended scenario communication goal.",
+      "scoring_anchor_matched": "Superficially touches the topic; weak supporting evidence; generic platitudes."
+    },
+    "structure_and_coherence": {
+      "criterion_id": "structure_and_coherence",
+      "criterion_name": "Structure & Coherence",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Purposeful structural arc: engaging hook, 1 clear logical transition marker(s), and a definitive synthesizing conclusion.",
+      "scoring_anchor_matched": "Masterclass rhetorical architecture; compelling narrative arc; memorable, resonant call to action."
+    },
+    "fluency_and_pacing": {
+      "criterion_id": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "raw_rating": 1,
+      "normalized_score": 0.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "High disfluency: 0.0% filler density and 0 awkward mid-sentence pause fragments.",
+      "scoring_anchor_matched": "Severe disfluencies; extreme filler frequency (>8%); halting pauses or unintelligible rush."
+    },
+    "vocal_delivery": {
+      "criterion_id": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Expressive pitch range (8.7 semitones) and healthy dynamic contrast (106.6 dB).",
+      "scoring_anchor_matched": "Virtuosic vocal command; emotive inflection, varied timbre, and pitch contour captivating listener attention."
+    },
+    "clarity_and_conciseness": {
+      "criterion_id": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.15,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Crisp, precise vocabulary, high lexical discipline, and economical phrasing with zero redundant verbal crutches.",
+      "scoring_anchor_matched": "Laser-sharp clarity; elegant concision; every single word carries weight and intent."
+    }
+  },
+  "audio_features": {
+    "duration_sec": 63.0,
+    "speaking_rate_wpm": 36.2,
+    "total_words": 38,
+    "total_pauses": 14,
+    "mean_pause_duration_sec": 0.93,
+    "max_pause_duration_sec": 4.25,
+    "silent_region_proportion": 0.208,
+    "pitch_f0_mean_hz": 248.4,
+    "pitch_f0_std_hz": 45.4,
+    "pitch_semitone_range": 8.7,
+    "is_monotonous": false,
+    "rms_energy_mean": 0.0539,
+    "dynamic_range_db": 106.6,
+    "clipping_ratio": 0.0,
+    "snr_db_estimate": 50.0,
+    "is_audio_available": true
+  },
+  "transcript_annotation": {
+    "text": "good morning teachers and my dear friends your phone understand your voice your favourite song I recommended automatically and a machine can answer your question with second sounds amazing life welcome to the world of artificial intelligence today",
+    "segments": [
+      {
+        "id": 1,
+        "text": "good morning teachers and my dear friends your phone understand your voice your favourite song I recommended automatically and a machine can answer your question with second sounds amazing life welcome to the world of artificial intelligence today",
+        "start_time": 0.0,
+        "end_time": 63.0
+      }
+    ],
+    "words": [
+      {
+        "word": "good",
+        "start_time": 0.0,
+        "end_time": 1.66,
+        "tag": null
+      },
+      {
+        "word": "morning",
+        "start_time": 1.66,
+        "end_time": 3.32,
+        "tag": null
+      },
+      {
+        "word": "teachers",
+        "start_time": 3.32,
+        "end_time": 4.97,
+        "tag": null
+      },
+      {
+        "word": "and",
+        "start_time": 4.97,
+        "end_time": 6.63,
+        "tag": null
+      },
+      {
+        "word": "my",
+        "start_time": 6.63,
+        "end_time": 8.29,
+        "tag": null
+      },
+      {
+        "word": "dear",
+        "start_time": 8.29,
+        "end_time": 9.95,
+        "tag": null
+      },
+      {
+        "word": "friends",
+        "start_time": 9.95,
+        "end_time": 11.61,
+        "tag": null
+      },
+      {
+        "word": "your",
+        "start_time": 11.61,
+        "end_time": 13.26,
+        "tag": null
+      },
+      {
+        "word": "phone",
+        "start_time": 13.26,
+        "end_time": 14.92,
+        "tag": null
+      },
+      {
+        "word": "understand",
+        "start_time": 14.92,
+        "end_time": 16.58,
+        "tag": null
+      },
+      {
+        "word": "your",
+        "start_time": 16.58,
+        "end_time": 18.24,
+        "tag": null
+      },
+      {
+        "word": "voice",
+        "start_time": 18.24,
+        "end_time": 19.89,
+        "tag": null
+      },
+      {
+        "word": "your",
+        "start_time": 19.89,
+        "end_time": 21.55,
+        "tag": null
+      },
+      {
+        "word": "favourite",
+        "start_time": 21.55,
+        "end_time": 23.21,
+        "tag": null
+      },
+      {
+        "word": "song",
+        "start_time": 23.21,
+        "end_time": 24.87,
+        "tag": null
+      },
+      {
+        "word": "I",
+        "start_time": 24.87,
+        "end_time": 26.53,
+        "tag": null
+      },
+      {
+        "word": "recommended",
+        "start_time": 26.53,
+        "end_time": 28.18,
+        "tag": null
+      },
+      {
+        "word": "automatically",
+        "start_time": 28.18,
+        "end_time": 29.84,
+        "tag": null
+      },
+      {
+        "word": "and",
+        "start_time": 29.84,
+        "end_time": 31.5,
+        "tag": null
+      },
+      {
+        "word": "a",
+        "start_time": 31.5,
+        "end_time": 33.16,
+        "tag": null
+      },
+      {
+        "word": "machine",
+        "start_time": 33.16,
+        "end_time": 34.82,
+        "tag": null
+      },
+      {
+        "word": "can",
+        "start_time": 34.82,
+        "end_time": 36.47,
+        "tag": null
+      },
+      {
+        "word": "answer",
+        "start_time": 36.47,
+        "end_time": 38.13,
+        "tag": null
+      },
+      {
+        "word": "your",
+        "start_time": 38.13,
+        "end_time": 39.79,
+        "tag": null
+      },
+      {
+        "word": "question",
+        "start_time": 39.79,
+        "end_time": 41.45,
+        "tag": null
+      },
+      {
+        "word": "with",
+        "start_time": 41.45,
+        "end_time": 43.11,
+        "tag": null
+      },
+      {
+        "word": "second",
+        "start_time": 43.11,
+        "end_time": 44.76,
+        "tag": null
+      },
+      {
+        "word": "sounds",
+        "start_time": 44.76,
+        "end_time": 46.42,
+        "tag": null
+      },
+      {
+        "word": "amazing",
+        "start_time": 46.42,
+        "end_time": 48.08,
+        "tag": null
+      },
+      {
+        "word": "life",
+        "start_time": 48.08,
+        "end_time": 49.74,
+        "tag": null
+      },
+      {
+        "word": "welcome",
+        "start_time": 49.74,
+        "end_time": 51.39,
+        "tag": null
+      },
+      {
+        "word": "to",
+        "start_time": 51.39,
+        "end_time": 53.05,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": 53.05,
+        "end_time": 54.71,
+        "tag": null
+      },
+      {
+        "word": "world",
+        "start_time": 54.71,
+        "end_time": 56.37,
+        "tag": null
+      },
+      {
+        "word": "of",
+        "start_time": 56.37,
+        "end_time": 58.03,
+        "tag": null
+      },
+      {
+        "word": "artificial",
+        "start_time": 58.03,
+        "end_time": 59.68,
+        "tag": null
+      },
+      {
+        "word": "intelligence",
+        "start_time": 59.68,
+        "end_time": 61.34,
+        "tag": null
+      },
+      {
+        "word": "today",
+        "start_time": 61.34,
+        "end_time": 63.0,
+        "tag": null
+      }
+    ],
+    "filler_words_detected": [],
+    "repetitions_detected": [],
+    "readability_flesch_score": 23.6,
+    "detected_language": "en"
+  },
+  "feedback_items": [
+    {
+      "feedback_id": "FB-80E7CD90",
+      "rubric_criterion": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "observed_issue": "Subdued speaking tempo (36.2 WPM). May cause listener attention to drift.",
+      "evidence_type": "acoustic_measurement",
+      "transcript_excerpt": null,
+      "timestamp_range": {
+        "start": 0.0,
+        "end": 60.0
+      },
+      "measured_value": "36.2 WPM (Target: 130 - 160 WPM)",
+      "explanation": "Pacing below 115 WPM can project hesitancy or lack of conversational momentum.",
+      "recommended_action": "Group words into short 4-to-6 word thought chunks and deliver each chunk with sustained forward momentum.",
+      "example_rewrite_or_exercise": "Thought-Group Sprints: Mark your script with slash marks every 5 words (e.g., 'In third quarter / our team deployed / three microservices'). Read chunk-by-chunk briskly.",
+      "severity": "medium",
+      "evaluator_method": "speech_duration_word_ratio_calculator",
+      "limitations": "Cultural and language norms vary; calculated on standard North American/British business speech benchmarks."
+    },
+    {
+      "feedback_id": "FB-3FC5B674",
+      "rubric_criterion": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "observed_issue": "Dense, convoluted syntactic complexity (Flesch score: 23.6).",
+      "evidence_type": "transcript_pattern",
+      "transcript_excerpt": "good morning teachers and my dear friends your phone understand your voice your favourite song I rec",
+      "timestamp_range": null,
+      "measured_value": "Flesch Reading Ease: 23.6 / 100 (Target: > 55.0 for spoken clarity)",
+      "explanation": "Spoken language requires shorter syntactic clauses than written text. Overly long compound sentences lose listeners who cannot re-read.",
+      "recommended_action": "Split compound clauses joined by 'and', 'which', or 'because' into two distinct declarative sentences.",
+      "example_rewrite_or_exercise": "The Two-Breath Rule: If you cannot comfortably utter a sentence in a single calm breath, insert a period and begin a new sentence.",
+      "severity": "medium",
+      "evaluator_method": "flesch_kincaid_syntactic_analyzer",
+      "limitations": "Flesch formula is based on syllable count and sentence length; specialized domain terminology naturally lowers the index."
+    }
+  ],
+  "contrastive_matches": [
+    {
+      "matched_pair_id": "PAIR-PIT-09",
+      "scenario": "persuasive_pitches",
+      "primary_flaw": "excessive_filler_words",
+      "ideal_sample_id": "PIT-09-IDEAL",
+      "flawed_sample_id": "PIT-09-FLAWED",
+      "similarity_explanation": "Selected from scenario 'persuasive_pitches' illustrating calibration for 'excessive_filler_words'.",
+      "contrastive_delta_analysis": "Contrasts injury prevention statistics and biometric heart rate variability (HRV) metrics versus vague lifestyle buzzwords."
+    }
+  ],
+  "reproducibility": {
+    "run_id": "RUN-82D1D6C226E9",
+    "software_version": "1.0.0",
+    "evaluation_mode": "audio_plus_transcript",
+    "input_sha256": "9148016d503bf95ed76f09a7b7873c26db0e64568df2a97d7d23539acedea8e6",
+    "dataset_version": "1.0.0",
+    "dataset_hash": "50dfa86c3b9a9dfb39a54a6fd24ab1a4e21e3a769fdc72c402bc9644fd731db4",
+    "rubric_id": "speech_default_v1",
+    "rubric_version": "1.0.0",
+    "rubric_hash": "7f08bbb853038a58",
+    "aggregation_formula": "sum(normalized_criterion_score * weight) / sum(available_weights)",
+    "normalized_scale": "Linear (rating - 1) / 4.0 * 100.0",
+    "timestamp_utc": "2026-10-15T13:23:20.857498+00:00"
+  }
+}

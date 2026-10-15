@@ -1,0 +1,858 @@
+{
+  "run_id": "RUN-8EF7463C8DF7",
+  "created_at": "2026-10-15T13:16:19.667680+00:00",
+  "evaluation_mode": "transcript_only",
+  "scenario": "persuasive_pitches",
+  "speech_prompt": "Municipal investment in protected bicycle infrastructure",
+  "overall_score": 78.1,
+  "grade": "C",
+  "coverage_ratio": 0.8,
+  "coverage_percentage": 80.0,
+  "eligible_criteria_count": 5,
+  "evaluated_criteria_count": 4,
+  "missing_criteria": [
+    "vocal_delivery"
+  ],
+  "criterion_scores": {
+    "content_and_relevance": {
+      "criterion_id": "content_and_relevance",
+      "criterion_name": "Content & Relevance",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.25,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Substantive, grounded presentation backed by concrete empirical data (12 metrics/dates/specifications) and strong topic alignment.",
+      "scoring_anchor_matched": "Compelling, deeply insightful treatment; flawless topic relevance; persuasive substance throughout."
+    },
+    "structure_and_coherence": {
+      "criterion_id": "structure_and_coherence",
+      "criterion_name": "Structure & Coherence",
+      "raw_rating": 3,
+      "normalized_score": 50.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Basic narrative sequence present, but lacks clear signposted transitions between major ideas.",
+      "scoring_anchor_matched": "Identifiable opening, body, and conclusion; simple chronological or list transitions."
+    },
+    "fluency_and_pacing": {
+      "criterion_id": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Controlled, confident delivery: minimal verbal fillers (0 detected, 0.0%).",
+      "scoring_anchor_matched": "Pristine fluency; zero distracting fillers; rhythmic mastery using pauses as rhetorical instruments."
+    },
+    "vocal_delivery": {
+      "criterion_id": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "raw_rating": null,
+      "normalized_score": null,
+      "weight": 0.2,
+      "status": "unavailable",
+      "reason": "Acoustic evaluation unavailable in transcript-only mode; vocal delivery cannot be measured without audio recording.",
+      "evidence_summary": "Unavailable: Requires audio waveform recording to measure fundamental frequency (F0), dynamic loudness, and vocal inflection.",
+      "scoring_anchor_matched": null
+    },
+    "clarity_and_conciseness": {
+      "criterion_id": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "raw_rating": 3,
+      "normalized_score": 50.0,
+      "weight": 0.15,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Fair clarity, but would benefit from more economical phrasing and concise discourse markers.",
+      "scoring_anchor_matched": "Clear main points; readable syntax; occasional redundancy that could be streamlined."
+    }
+  },
+  "audio_features": null,
+  "transcript_annotation": {
+    "text": "Honorable members of the city council, today we face a critical choice regarding our municipal transit infrastructure. Over the past three years, separated bicycle corridors in peer cities have reduced pedestrian injuries by thirty-four percent while accelerating morning business foot traffic by twenty-two percent. By allocating eight million dollars from the urban transit fund, we will construct twelve miles of protected corridors connecting the central business district to the eastern residential wards. Independent financial audits project this will yield six million dollars in annual healthcare savings and congestion relief within twenty-four months. The data is definitive: protected transit lanes preserve lives and fuel local commerce. I urge your immediate approval of ordinance four-twelve.",
+    "segments": [
+      {
+        "id": 1,
+        "text": "Honorable members of the city council, today we face a critical choice regarding our municipal transit infrastructure.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 2,
+        "text": "Over the past three years, separated bicycle corridors in peer cities have reduced pedestrian injuries by thirty-four percent while accelerating morning business foot traffic by twenty-two percent.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 3,
+        "text": "By allocating eight million dollars from the urban transit fund, we will construct twelve miles of protected corridors connecting the central business district to the eastern residential wards.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 4,
+        "text": "Independent financial audits project this will yield six million dollars in annual healthcare savings and congestion relief within twenty-four months.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 5,
+        "text": "The data is definitive: protected transit lanes preserve lives and fuel local commerce.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 6,
+        "text": "I urge your immediate approval of ordinance four-twelve.",
+        "start_time": null,
+        "end_time": null
+      }
+    ],
+    "words": [
+      {
+        "word": "Honorable",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "members",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "of",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "city",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "council",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "today",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "we",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "face",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "a",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "critical",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "choice",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "regarding",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "our",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "municipal",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "transit",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "infrastructure",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "Over",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "past",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "three",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "years",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "separated",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "bicycle",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "corridors",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "in",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "peer",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "cities",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "have",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "reduced",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "pedestrian",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "injuries",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "by",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "thirty-four",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "percent",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "while",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "accelerating",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "morning",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "business",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "foot",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "traffic",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "by",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "twenty-two",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "percent",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "By",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "allocating",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "eight",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "million",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "dollars",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "from",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "urban",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "transit",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "fund",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "we",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "will",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "construct",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "twelve",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "miles",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "of",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "protected",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "corridors",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "connecting",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "central",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "business",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "district",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "to",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "eastern",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "residential",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "wards",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "Independent",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "financial",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "audits",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "project",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "this",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "will",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "yield",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "six",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "million",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "dollars",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "in",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "annual",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "healthcare",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "savings",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "and",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "congestion",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "relief",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "within",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "twenty-four",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "months",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "The",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "data",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "is",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "definitive",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "protected",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "transit",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "lanes",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "preserve",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "lives",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "and",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "fuel",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "local",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "commerce",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "I",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "urge",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "your",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "immediate",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "approval",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "of",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "ordinance",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "four-twelve",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      }
+    ],
+    "filler_words_detected": [],
+    "repetitions_detected": [],
+    "readability_flesch_score": 29.7,
+    "detected_language": "en"
+  },
+  "feedback_items": [
+    {
+      "feedback_id": "FB-58B441DE",
+      "rubric_criterion": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "observed_issue": "Dense, convoluted syntactic complexity (Flesch score: 29.7).",
+      "evidence_type": "transcript_pattern",
+      "transcript_excerpt": "Honorable members of the city council, today we face a critical choice regarding our municipal trans",
+      "timestamp_range": null,
+      "measured_value": "Flesch Reading Ease: 29.7 / 100 (Target: > 55.0 for spoken clarity)",
+      "explanation": "Spoken language requires shorter syntactic clauses than written text. Overly long compound sentences lose listeners who cannot re-read.",
+      "recommended_action": "Split compound clauses joined by 'and', 'which', or 'because' into two distinct declarative sentences.",
+      "example_rewrite_or_exercise": "The Two-Breath Rule: If you cannot comfortably utter a sentence in a single calm breath, insert a period and begin a new sentence.",
+      "severity": "medium",
+      "evaluator_method": "flesch_kincaid_syntactic_analyzer",
+      "limitations": "Flesch formula is based on syllable count and sentence length; specialized domain terminology naturally lowers the index."
+    },
+    {
+      "feedback_id": "FB-E715B027",
+      "rubric_criterion": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "observed_issue": "Exemplary fluency control; minimal verbal fillers detected.",
+      "evidence_type": "transcript_pattern",
+      "transcript_excerpt": null,
+      "timestamp_range": null,
+      "measured_value": "Only 0 filler(s) in 113 words (0.0%)",
+      "explanation": "You demonstrated discipline by maintaining clean transitions between thoughts.",
+      "recommended_action": "Continue using this calm cadence across higher-pressure speaking scenarios.",
+      "example_rewrite_or_exercise": "Maintenance drill: Challenge yourself to maintain this clean delivery in unscripted Q&A sessions.",
+      "severity": "positive",
+      "evaluator_method": "lexical_pattern_density_analyzer",
+      "limitations": "Verified against standard filler dictionary."
+    }
+  ],
+  "contrastive_matches": [
+    {
+      "matched_pair_id": "PAIR-PIT-01",
+      "scenario": "persuasive_pitches",
+      "primary_flaw": "weak_opening",
+      "ideal_sample_id": "PIT-01-IDEAL",
+      "flawed_sample_id": "PIT-01-FLAWED",
+      "similarity_explanation": "Selected from scenario 'persuasive_pitches' illustrating calibration for 'weak_opening'.",
+      "contrastive_delta_analysis": "Shows immediate market pain quantification versus timid biographical background before reaching the pitch."
+    }
+  ],
+  "reproducibility": {
+    "run_id": "RUN-8EF7463C8DF7",
+    "software_version": "1.0.0",
+    "evaluation_mode": "transcript_only",
+    "input_sha256": "707cf4667a35b5111ed663daba6297a417800ae1f32df74c79d5ce6dc7ea0390",
+    "dataset_version": "1.0.0",
+    "dataset_hash": "50dfa86c3b9a9dfb39a54a6fd24ab1a4e21e3a769fdc72c402bc9644fd731db4",
+    "rubric_id": "speech_default_v1",
+    "rubric_version": "1.0.0",
+    "rubric_hash": "7f08bbb853038a58",
+    "aggregation_formula": "sum(normalized_criterion_score * weight) / sum(available_weights)",
+    "normalized_scale": "Linear (rating - 1) / 4.0 * 100.0",
+    "timestamp_utc": "2026-10-15T13:16:19.667680+00:00"
+  }
+}

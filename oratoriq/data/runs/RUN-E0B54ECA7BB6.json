@@ -1,0 +1,218 @@
+{
+  "run_id": "RUN-E0B54ECA7BB6",
+  "created_at": "2026-10-15T13:05:27.616149+00:00",
+  "evaluation_mode": "transcript_only",
+  "scenario": "presentation_delivery",
+  "speech_prompt": "Deliver an executive kickoff.",
+  "overall_score": 85.9,
+  "grade": "B",
+  "coverage_ratio": 0.8,
+  "coverage_percentage": 80.0,
+  "eligible_criteria_count": 5,
+  "evaluated_criteria_count": 4,
+  "missing_criteria": [
+    "vocal_delivery"
+  ],
+  "criterion_scores": {
+    "content_and_relevance": {
+      "criterion_id": "content_and_relevance",
+      "criterion_name": "Content & Relevance",
+      "raw_rating": 4,
+      "normalized_score": 75.0,
+      "weight": 0.25,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Substantive, grounded presentation backed by concrete empirical data (0 metrics/dates/specifications) and strong topic alignment.",
+      "scoring_anchor_matched": "Thorough and tailored coverage; insightful examples; clear alignment with audience and goal."
+    },
+    "structure_and_coherence": {
+      "criterion_id": "structure_and_coherence",
+      "criterion_name": "Structure & Coherence",
+      "raw_rating": 4,
+      "normalized_score": 75.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Clear logical progression supported by 0 transition term(s) and structured sequencing.",
+      "scoring_anchor_matched": "Well-engineered logical arc; seamless thematic transitions; crisp thesis reinforcement in closing."
+    },
+    "fluency_and_pacing": {
+      "criterion_id": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Controlled, confident delivery: minimal verbal fillers (0 detected, 0.0%).",
+      "scoring_anchor_matched": "Pristine fluency; zero distracting fillers; rhythmic mastery using pauses as rhetorical instruments."
+    },
+    "vocal_delivery": {
+      "criterion_id": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "raw_rating": null,
+      "normalized_score": null,
+      "weight": 0.2,
+      "status": "unavailable",
+      "reason": "Acoustic evaluation unavailable in transcript-only mode; vocal delivery cannot be measured without audio recording.",
+      "evidence_summary": "Unavailable: Requires audio waveform recording to measure fundamental frequency (F0), dynamic loudness, and vocal inflection.",
+      "scoring_anchor_matched": null
+    },
+    "clarity_and_conciseness": {
+      "criterion_id": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.15,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Crisp, precise vocabulary, high lexical discipline, and economical phrasing with zero redundant verbal crutches.",
+      "scoring_anchor_matched": "Laser-sharp clarity; elegant concision; every single word carries weight and intent."
+    }
+  },
+  "audio_features": null,
+  "transcript_annotation": {
+    "text": "Good morning team. Today we announce our automated evaluation architecture for audio processing.",
+    "segments": [
+      {
+        "id": 1,
+        "text": "Good morning team.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 2,
+        "text": "Today we announce our automated evaluation architecture for audio processing.",
+        "start_time": null,
+        "end_time": null
+      }
+    ],
+    "words": [
+      {
+        "word": "Good",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "morning",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "team",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "Today",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "we",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "announce",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "our",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "automated",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "evaluation",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "architecture",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "for",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "audio",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "processing",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      }
+    ],
+    "filler_words_detected": [],
+    "repetitions_detected": [],
+    "readability_flesch_score": 24.5,
+    "detected_language": "en"
+  },
+  "feedback_items": [
+    {
+      "feedback_id": "FB-963C1364",
+      "rubric_criterion": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "observed_issue": "Dense, convoluted syntactic complexity (Flesch score: 24.5).",
+      "evidence_type": "transcript_pattern",
+      "transcript_excerpt": "Good morning team.",
+      "timestamp_range": null,
+      "measured_value": "Flesch Reading Ease: 24.5 / 100 (Target: > 55.0 for spoken clarity)",
+      "explanation": "Spoken language requires shorter syntactic clauses than written text. Overly long compound sentences lose listeners who cannot re-read.",
+      "recommended_action": "Split compound clauses joined by 'and', 'which', or 'because' into two distinct declarative sentences.",
+      "example_rewrite_or_exercise": "The Two-Breath Rule: If you cannot comfortably utter a sentence in a single calm breath, insert a period and begin a new sentence.",
+      "severity": "medium",
+      "evaluator_method": "flesch_kincaid_syntactic_analyzer",
+      "limitations": "Flesch formula is based on syllable count and sentence length; specialized domain terminology naturally lowers the index."
+    }
+  ],
+  "contrastive_matches": [
+    {
+      "matched_pair_id": "PAIR-PRE-06",
+      "scenario": "presentation_delivery",
+      "primary_flaw": "unsupported_claims",
+      "ideal_sample_id": "PRE-06-IDEAL",
+      "flawed_sample_id": "PRE-06-FLAWED",
+      "similarity_explanation": "Selected from scenario 'presentation_delivery' illustrating calibration for 'unsupported_claims'.",
+      "contrastive_delta_analysis": "Contrasts verified CVSS scoring and reproducible remediation patches against defensive downplaying of security vulnerabilities."
+    }
+  ],
+  "reproducibility": {
+    "run_id": "RUN-E0B54ECA7BB6",
+    "software_version": "1.0.0",
+    "evaluation_mode": "transcript_only",
+    "input_sha256": "0c25e54cd135e6d4cb13cae986754fce6276d59b946e9349d41443655e36aeb5",
+    "dataset_version": "1.0.0",
+    "dataset_hash": "50dfa86c3b9a9dfb39a54a6fd24ab1a4e21e3a769fdc72c402bc9644fd731db4",
+    "rubric_id": "speech_default_v1",
+    "rubric_version": "1.0.0",
+    "rubric_hash": "7f08bbb853038a58",
+    "aggregation_formula": "sum(normalized_criterion_score * weight) / sum(available_weights)",
+    "normalized_scale": "Linear (rating - 1) / 4.0 * 100.0",
+    "timestamp_utc": "2026-10-15T13:05:27.616149+00:00"
+  }
+}

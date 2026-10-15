@@ -1,0 +1,518 @@
+{
+  "run_id": "RUN-62369121A13A",
+  "created_at": "2026-10-15T10:56:29.941117+00:00",
+  "evaluation_mode": "transcript_only",
+  "scenario": "public_speaking",
+  "speech_prompt": "Inspire developers to build ethically responsible AI systems",
+  "overall_score": 60.9,
+  "grade": "D",
+  "coverage_ratio": 0.8,
+  "coverage_percentage": 80.0,
+  "eligible_criteria_count": 5,
+  "evaluated_criteria_count": 4,
+  "missing_criteria": [
+    "vocal_delivery"
+  ],
+  "criterion_scores": {
+    "content_and_relevance": {
+      "criterion_id": "content_and_relevance",
+      "criterion_name": "Content & Relevance",
+      "raw_rating": 2,
+      "normalized_score": 25.0,
+      "weight": 0.25,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Low topic keyword alignment with the requested scenario prompt.",
+      "scoring_anchor_matched": "Superficially touches the topic; weak supporting evidence; generic platitudes."
+    },
+    "structure_and_coherence": {
+      "criterion_id": "structure_and_coherence",
+      "criterion_name": "Structure & Coherence",
+      "raw_rating": 4,
+      "normalized_score": 75.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Opening: Purposeful hook; Transitions: 0 detected (none); Conclusion: Present.",
+      "scoring_anchor_matched": "Well-engineered logical arc; seamless thematic transitions; crisp thesis reinforcement in closing."
+    },
+    "fluency_and_pacing": {
+      "criterion_id": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "raw_rating": 5,
+      "normalized_score": 100.0,
+      "weight": 0.2,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Filler word density: 0.0% (0 fillers in 61 words).",
+      "scoring_anchor_matched": "Pristine fluency; zero distracting fillers; rhythmic mastery using pauses as rhetorical instruments."
+    },
+    "vocal_delivery": {
+      "criterion_id": "vocal_delivery",
+      "criterion_name": "Vocal Delivery",
+      "raw_rating": null,
+      "normalized_score": null,
+      "weight": 0.2,
+      "status": "unavailable",
+      "reason": "Acoustic evaluation unavailable in transcript-only mode; vocal delivery cannot be measured without audio recording.",
+      "evidence_summary": "Unavailable: Requires audio waveform recording to measure fundamental frequency (F0), dynamic loudness, and vocal inflection.",
+      "scoring_anchor_matched": null
+    },
+    "clarity_and_conciseness": {
+      "criterion_id": "clarity_and_conciseness",
+      "criterion_name": "Clarity & Conciseness",
+      "raw_rating": 3,
+      "normalized_score": 50.0,
+      "weight": 0.15,
+      "status": "evaluated",
+      "reason": null,
+      "evidence_summary": "Moderate readability (44.3/100) with minor word repetition.",
+      "scoring_anchor_matched": "Clear main points; readable syntax; occasional redundancy that could be streamlined."
+    }
+  },
+  "audio_features": null,
+  "transcript_annotation": {
+    "text": "In 2018, a single line of automated pricing code bankrupted three independent clinics in rural Ohio overnight. Not through malice, but through unexamined optimization. When we write algorithms that touch human lives, efficiency cannot be our sole metric. Today, I want to share three architectural guardrails that ensure our machine learning models protect the vulnerable before they optimize the bottom line.",
+    "segments": [
+      {
+        "id": 1,
+        "text": "In 2018, a single line of automated pricing code bankrupted three independent clinics in rural Ohio overnight.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 2,
+        "text": "Not through malice, but through unexamined optimization.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 3,
+        "text": "When we write algorithms that touch human lives, efficiency cannot be our sole metric.",
+        "start_time": null,
+        "end_time": null
+      },
+      {
+        "id": 4,
+        "text": "Today, I want to share three architectural guardrails that ensure our machine learning models protect the vulnerable before they optimize the bottom line.",
+        "start_time": null,
+        "end_time": null
+      }
+    ],
+    "words": [
+      {
+        "word": "In",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "2018",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "a",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "single",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "line",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "of",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "automated",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "pricing",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "code",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "bankrupted",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "three",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "independent",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "clinics",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "in",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "rural",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "Ohio",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "overnight",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "Not",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "through",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "malice",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "but",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "through",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "unexamined",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "optimization",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "When",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "we",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "write",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "algorithms",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "that",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "touch",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "human",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "lives",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "efficiency",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "cannot",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "be",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "our",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "sole",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "metric",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "Today",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "I",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "want",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "to",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "share",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "three",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "architectural",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "guardrails",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "that",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "ensure",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "our",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "machine",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "learning",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "models",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "protect",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "vulnerable",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "before",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "they",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "optimize",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "the",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "bottom",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      },
+      {
+        "word": "line",
+        "start_time": null,
+        "end_time": null,
+        "tag": null
+      }
+    ],
+    "filler_words_detected": [],
+    "repetitions_detected": [],
+    "readability_flesch_score": 44.3,
+    "detected_language": "en"
+  },
+  "feedback_items": [
+    {
+      "feedback_id": "FB-F10F1A67",
+      "rubric_criterion": "fluency_and_pacing",
+      "criterion_name": "Fluency & Pacing",
+      "observed_issue": "Exemplary fluency control; minimal verbal fillers detected.",
+      "evidence_type": "transcript_pattern",
+      "transcript_excerpt": null,
+      "timestamp_range": null,
+      "measured_value": "Only 0 filler(s) in 61 words (0.0%)",
+      "explanation": "You demonstrated discipline by maintaining clean transitions between thoughts.",
+      "recommended_action": "Continue using this calm cadence across higher-pressure speaking scenarios.",
+      "example_rewrite_or_exercise": "Maintenance drill: Challenge yourself to maintain this clean delivery in unscripted Q&A sessions.",
+      "severity": "positive",
+      "evaluator_method": "lexical_pattern_density_analyzer",
+      "limitations": "Verified against standard filler dictionary."
+    }
+  ],
+  "contrastive_matches": [
+    {
+      "matched_pair_id": "PAIR-PUB-03",
+      "scenario": "public_speaking",
+      "primary_flaw": "unsupported_claims",
+      "ideal_sample_id": "PUB-03-IDEAL",
+      "flawed_sample_id": "PUB-03-FLAWED",
+      "similarity_explanation": "Selected from scenario 'public_speaking' illustrating calibration for 'unsupported_claims'.",
+      "contrastive_delta_analysis": "Exemplifies how empirical local casualty statistics and economic trade-offs outperform emotional, unsubstantiated assertions."
+    }
+  ],
+  "reproducibility": {
+    "run_id": "RUN-62369121A13A",
+    "software_version": "1.0.0",
+    "evaluation_mode": "transcript_only",
+    "input_sha256": "9dc3dc6e07636f9a3d62c5e5f480710254abd5a568b2f8bfa3652ad81ecb0de3",
+    "dataset_version": "1.0.0",
+    "dataset_hash": "50dfa86c3b9a9dfb39a54a6fd24ab1a4e21e3a769fdc72c402bc9644fd731db4",
+    "rubric_id": "speech_default_v1",
+    "rubric_version": "1.0.0",
+    "rubric_hash": "7f08bbb853038a58",
+    "aggregation_formula": "sum(normalized_criterion_score * weight) / sum(available_weights)",
+    "normalized_scale": "Linear (rating - 1) / 4.0 * 100.0",
+    "timestamp_utc": "2026-10-15T10:56:29.941117+00:00"
+  }
+}
