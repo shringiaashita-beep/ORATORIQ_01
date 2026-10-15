@@ -5,8 +5,21 @@
   "description": "OratorIQ — Evidence-Based Speech Coach",
   "scripts": {
     "dev": "npm --prefix frontend run dev",
-    "build": "npm --prefix frontend run build",
+    "build": "npm --prefix frontend run build && node -e \"const fs = require('fs'); fs.cpSync('frontend/.next', '.next', {recursive: true}); if (fs.existsSync('frontend/public')) fs.cpSync('frontend/public', 'public', {recursive: true});\"",
     "start": "npm --prefix frontend run start",
     "postinstall": "npm --prefix frontend install"
+  },
+  "dependencies": {
+    "next": "16.4.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
